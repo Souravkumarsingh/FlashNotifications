@@ -171,7 +171,7 @@ public final class FlashNotificationView: UIView, FlashNotification {
     private func setupTargets() {
         NotificationCenter.default.addObserver(self, selector: #selector(didRotate), name: UIDevice.orientationDidChangeNotification, object: nil)
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissNotificationOnTap))
-        let swipeRecognizer = UISwipeGesturerecognizer(target: self, action: #selector(self.dismissNotification))
+        let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.dismissNotification))
         swipeRecognizer.direction = .up
         
         addGestureRecognizer(tapRecognizer)
