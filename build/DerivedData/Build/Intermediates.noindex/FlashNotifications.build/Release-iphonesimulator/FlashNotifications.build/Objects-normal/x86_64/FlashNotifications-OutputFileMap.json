@@ -1,0 +1,41 @@
+{
+  "" : {
+    "const-values" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications-primary.swiftconstvalues",
+    "dependencies" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications-primary.d",
+    "diagnostics" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications-primary.dia",
+    "emit-module-dependencies" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications-primary-emit-module.dia",
+    "pch" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications-primary.swiftdeps"
+  },
+  "/Users/souravkumarsingh/Desktop/FlashNotifications/FlashNotifications/Classes/Colors.swift" : {
+    "index-unit-output-path" : "/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/Colors.o",
+    "llvm-bc" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/Colors.bc",
+    "object" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/Colors.o"
+  },
+  "/Users/souravkumarsingh/Desktop/FlashNotifications/FlashNotifications/Classes/DeviceManager.swift" : {
+    "index-unit-output-path" : "/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/DeviceManager.o",
+    "llvm-bc" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/DeviceManager.bc",
+    "object" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/DeviceManager.o"
+  },
+  "/Users/souravkumarsingh/Desktop/FlashNotifications/FlashNotifications/Classes/FlashNotification.swift" : {
+    "index-unit-output-path" : "/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotification.o",
+    "llvm-bc" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotification.bc",
+    "object" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotification.o"
+  },
+  "/Users/souravkumarsingh/Desktop/FlashNotifications/FlashNotifications/Classes/FlashNotificationType.swift" : {
+    "index-unit-output-path" : "/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotificationType.o",
+    "llvm-bc" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotificationType.bc",
+    "object" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotificationType.o"
+  },
+  "/Users/souravkumarsingh/Desktop/FlashNotifications/FlashNotifications/Classes/FlashNotifications.swift" : {
+    "index-unit-output-path" : "/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications.o",
+    "llvm-bc" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications.bc",
+    "object" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/FlashNotifications.o"
+  },
+  "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/souravkumarsingh/Desktop/FlashNotifications/build/DerivedData/Build/Intermediates.noindex/FlashNotifications.build/Release-iphonesimulator/FlashNotifications.build/Objects-normal/x86_64/GeneratedAssetSymbols.o"
+  }
+}
