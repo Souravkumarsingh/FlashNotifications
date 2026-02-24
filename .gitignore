@@ -14,9 +14,12 @@ xcuserdata/
 # Swift
 *.swiftdeps
 
-# Source Code (binary distribution only)
-FlashNotifications/Classes/
-FlashNotifications/Assets/
+# Docs (not needed for SPM distribution)
+BINARY_DISTRIBUTION.md
+INTEGRATION.md
+LICENSE
+Package.swift.binary
+QUICKSTART.md
 
 # macOS
 .DS_Store
@@ -28,4 +31,5 @@ FlashNotifications/Assets/
 *~
 
 # Package Manager
+.package.resolved
 .package.resolved
