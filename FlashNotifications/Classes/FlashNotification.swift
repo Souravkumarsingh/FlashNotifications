@@ -142,10 +142,10 @@ public final class FlashNotificationView: UIView, FlashNotification {
         
         // Content stack
         NSLayoutConstraint.activate([
-            contentStack.topAnchor.constraint(equalTo: topBar.bottomAnchor, constant: 10),
+            contentStack.topAnchor.constraint(equalTo: topBar.bottomAnchor, constant: 6),
             contentStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             contentStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-            contentStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
+            contentStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6)
         ])
         
         // Icon container
