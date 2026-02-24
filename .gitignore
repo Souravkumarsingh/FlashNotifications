@@ -14,6 +14,9 @@ xcuserdata/
 # Swift
 *.swiftdeps
 
+# Source Code (kept separate in FlashNotificationsSource repo)
+FlashNotifications/
+
 # Docs (not needed for SPM distribution)
 BINARY_DISTRIBUTION.md
 INTEGRATION.md
