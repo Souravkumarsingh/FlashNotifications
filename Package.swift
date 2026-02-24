@@ -17,7 +17,7 @@ let package = Package(
         .binaryTarget(
             name: "FlashNotifications",
             url: "https://github.com/Souravkumarsingh/FlashNotifications/releases/download/v1.0.1/FlashNotifications.xcframework.zip",
-            checksum: "12c82a69835a18610abd705eda265f6caa61982aa21b6ee75592b36a287abb56"
+            checksum: "41bed17deb3c47286c78ebf88614b9f2cffa074df329b7fa9cf16dcaf1350f79"
         )
     ]
 )
