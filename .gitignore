@@ -3,14 +3,19 @@
 .swiftpm/
 
 # Xcode
-build/
 DerivedData/
+build/*
+!build/FlashNotifications.xcframework/
 *.xcarchive
 xcuserdata/
 *.xcworkspace/xcuserdata/
 
 # Swift
 *.swiftdeps
+
+# Source Code (binary distribution only)
+FlashNotifications/Classes/
+FlashNotifications/Assets/
 
 # macOS
 .DS_Store
