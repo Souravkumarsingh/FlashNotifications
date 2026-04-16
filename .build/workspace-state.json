@@ -1,0 +1,33 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "flashnotificationsframework",
+          "kind" : "root",
+          "location" : "/Users/souravkumarsingh/Desktop/FlashNotificationsFramework",
+          "name" : "FlashNotificationsFramework"
+        },
+        "path" : "/Users/souravkumarsingh/Desktop/FlashNotificationsFramework/.build/artifacts/flashnotificationsframework/FlashNotifications/FlashNotifications.xcframework",
+        "source" : {
+          "checksum" : "709b2e4e5430856d549eb0c6fa2d7db7c95223d5c7d1a971ee04e0635edc780a",
+          "type" : "remote",
+          "url" : "https://github.com/Souravkumarsingh/FlashNotifications/releases/download/v1.0.1/FlashNotifications.xcframework.zip"
+        },
+        "targetName" : "FlashNotifications"
+      }
+    ],
+    "dependencies" : [
+
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
