@@ -104,6 +104,70 @@ FlashNotifications is distributed as a **pre-compiled XCframework binary**, whic
 - ✅ Includes arm64 and x86_64 for iOS Simulator
 - ✅ Works seamlessly with Swift Package Manager
 
+## Troubleshooting
+
+### GitHub Login Prompt When Adding Package
+
+If Xcode asks for GitHub login credentials when adding this package:
+
+1. **Clear Xcode's SPM cache:**
+   ```bash
+   rm -rf ~/Library/Developer/Xcode/DerivedData
+   rm -rf ~/.swiftpm
+   ```
+
+2. **Sign into GitHub in Xcode (recommended):**
+   - Go to Xcode → Settings → Accounts
+   - Click **+** → Select GitHub → Sign in with your GitHub account
+   - This allows Xcode to authenticate SPM requests automatically
+
+3. **Use the correct repository URL:**
+   - Correct: `https://github.com/Souravkumarsingh/FlashNotifications.git`
+   - ⚠️ Do NOT use `FlashNotificationsSource` — that's a deprecated/moved repo
+
+4. **Alternative: Use SSH keys** (for developers):
+   ```bash
+   # Generate SSH key
+   ssh-keygen -t ed25519 -C "your.email@example.com"
+   
+   # Add public key to GitHub (https://github.com/settings/keys)
+   pbcopy < ~/.ssh/id_ed25519.pub
+   ```
+
+### 404 Error When Fetching Binary
+
+If you see:
+```
+failed downloading 'https://...FlashNotifications.xcframework.zip': badResponseStatusCode(404)
+```
+
+**Root cause:** The release tag doesn't have the binary ZIP file attached.
+
+**Solution:**
+1. Ensure the git tag is pushed to GitHub:
+   ```bash
+   git push origin --tags
+   ```
+
+2. Verify the GitHub release exists at:
+   `https://github.com/Souravkumarsingh/FlashNotifications/releases/tag/v1.0.1`
+
+3. Confirm the binary ZIP is attached to the release (not just the tag)
+
+4. Verify `Package.swift` specifies the correct version and checksum
+
+### How SPM Resolution Works
+
+When you add FlashNotifications to your project, SPM performs these steps:
+
+1. **Clone the git repository** and checkout the specified version tag
+2. **Read Package.swift** from that tag
+3. **Download the binary XCframework ZIP** from the release asset URL
+4. **Verify the checksum** matches the one in `Package.swift`
+5. **Cache the binary** for future use
+
+If any step fails (wrong URL, missing release, mismatched checksum), you'll see an error.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
