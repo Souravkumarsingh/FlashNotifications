@@ -30,7 +30,7 @@ To integrate FlashNotifications into your project using SPM:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Souravkumarsingh/FlashNotifications.git", from: "1.0.0")
+    .package(url: "https://github.com/Souravkumarsingh/FlashNotifications.git", from: "1.0.1")
 ]
 ```
 
