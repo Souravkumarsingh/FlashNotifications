@@ -2,6 +2,14 @@
 
 A lightweight iOS notification framework built with UIKit and Swift - **Distributed as a pre-compiled binary XCframework**.
 
+## 🎬 Demo Video
+
+Watch FlashNotifications in action:
+
+[![FlashNotifications Demo](https://img.youtube.com/vi/2WkZ-_vdFRE/maxresdefault.jpg)](https://youtube.com/shorts/2WkZ-_vdFRE?feature=share)
+
+[View on YouTube](https://youtube.com/shorts/2WkZ-_vdFRE?feature=share)
+
 ## Features
 
 - Flash notifications with customizable colors and styles
