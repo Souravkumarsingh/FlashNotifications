@@ -10,7 +10,7 @@ The framework is distributed as a pre-compiled binary for fast integration.
   DESC
 
   spec.homepage     = "https://github.com/Souravkumarsingh/FlashNotifications"
-  spec.license      = { :type => "MIT" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Sourav Kumar Singh" => "sauravkumarsingh.singh@gmail.com" }
   
   spec.platform     = :ios, "13.0"
