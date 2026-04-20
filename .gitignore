@@ -1,0 +1,22 @@
+# Xcode
+.DS_Store
+xcuserdata/
+*.xcworkspace
+DerivedData/
+*.pbxproj
+
+# Swift Package Manager
+.build/
+.swiftpm/
+*.swiftpm/
+.package.resolved
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.AppleDouble
+.LSOverride
