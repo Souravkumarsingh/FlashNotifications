@@ -115,6 +115,64 @@ FlashNotificationManager.showNotification(
 )
 ```
 
+## API Documentation
+
+### FlashNotificationConfig
+
+A configuration class for customizing notification appearance and behavior.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `textColor` | `UIColor?` | Default text color for the notification |
+| `titleTextColor` | `UIColor?` | Custom color for the notification title text |
+| `messageTextColor` | `UIColor?` | Custom color for the notification message text |
+| `backgroundColor` | `UIColor?` | Background color of the notification |
+| `image` | `UIImage?` | Optional image to display in the notification |
+| `title` | `String?` | Title text of the notification |
+| `message` | `String?` | Main message text of the notification |
+| `dismissDelay` | `TimeInterval?` | Time in seconds before the notification auto-dismisses |
+| `dismissDirection` | `FlashNotifications.DismissDirection?` | Direction for dismissing the notification (up, down, left, right) |
+| `delegate` | `any FlashNotifications.FlashNotificationDelegate?` | Delegate to handle notification tap events |
+| `completion` | `(() -> Void)?` | Closure called when the notification is dismissed |
+
+#### Initialization
+
+```swift
+public init()
+```
+
+### showNotification Method
+
+Displays a notification with the specified configuration.
+
+```swift
+public static func showNotification(config: FlashNotifications.FlashNotificationConfig) -> (any FlashNotifications.FlashNotification)?
+```
+
+#### Parameters
+
+- `config`: A `FlashNotificationConfig` instance containing all customization options
+
+#### Return Value
+
+Returns an optional `FlashNotification` object if the notification was successfully created, or `nil` if it failed.
+
+#### Example Usage
+
+```swift
+let config = FlashNotificationConfig()
+config.title = "Welcome"
+config.message = "Notification system initialized"
+config.backgroundColor = .systemGreen
+config.titleTextColor = .white
+config.messageTextColor = .white
+config.dismissDelay = 3.0
+
+let notification = FlashNotifications.showNotification(config: config)
+```
+
 ## Distribution Format
 
 FlashNotifications is distributed as a **pre-compiled XCframework binary**, which means:
