@@ -4,22 +4,25 @@ Pod::Spec.new do |spec|
   spec.summary      = "Beautiful and customizable iOS notifications framework"
   
   spec.description  = <<-DESC
-FlashNotifications is a lightweight and customizable notifications framework for iOS.
-It provides a simple API for displaying notifications with minimal setup.
-Distributed as a pre-compiled binary framework.
+FlashNotifications is a lightweight and easy-to-use notifications framework for iOS.
+It provides a simple API for displaying beautiful, customizable notifications.
+The framework is distributed as a pre-compiled binary for fast integration.
   DESC
 
   spec.homepage     = "https://github.com/Souravkumarsingh/FlashNotifications"
   spec.license      = { :type => "MIT" }
-  spec.author       = { "Sourav Kumar Singh" => "your-email@example.com" }
+  spec.author       = { "Sourav Kumar Singh" => "sauravkumarsingh.singh@gmail.com" }
   
   spec.platform     = :ios, "13.0"
+  spec.swift_version = "5.0"
   
-  # Option 1: Download from GitHub release (recommended)
+  # Download pre-built binary from GitHub release
   spec.source       = { :http => "https://github.com/Souravkumarsingh/FlashNotifications/releases/download/1.0.0/FlashNotifications.xcframework.zip" }
+  
+  # Specify the pre-built XCFramework
   spec.vendored_frameworks = "FlashNotifications.xcframework"
   
-  # Alternative Option: Use git source (requires XCFramework in repo)
-  # spec.source       = { :git => "https://github.com/Souravkumarsingh/FlashNotifications.git", :tag => "1.0.0" }
-  # spec.vendored_frameworks = "FlashNotifications.xcframework"
+  # No dependencies for binary distribution
+  spec.requires_arc = false
+  
 end
