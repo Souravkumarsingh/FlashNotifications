@@ -17,20 +17,33 @@ A lightweight iOS notification framework built with UIKit and Swift - **Distribu
 
 ## Installation
 
+### CocoaPods (Recommended)
+
+Add the following to your `Podfile`:
+
+```ruby
+pod 'FlashNotifications', '~> 1.0.0'
+```
+
+Then run:
+```bash
+pod install
+```
+
 ### Swift Package Manager
 
 To integrate FlashNotifications into your project using SPM:
 
 1. In Xcode: **File** → **Add Packages...**
-2. Enter the repository URL
-3. Select the version requirement (e.g., "Up to Next Major")
+2. Enter the repository URL: `https://github.com/Souravkumarsingh/FlashNotifications.git`
+3. Select branch: `main` (recommended to avoid version caching issues)
 4. Choose your target and click **Add Package**
 
 #### In your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Souravkumarsingh/FlashNotifications.git", from: "2.0.0")
+    .package(url: "https://github.com/Souravkumarsingh/FlashNotifications.git", branch: "main")
 ]
 ```
 
@@ -39,7 +52,7 @@ Then add it to your target:
 ```swift
 targets: [
     .target(
-        name: "FlashNotifications",
+        name: "YourApp",
         dependencies: ["FlashNotifications"]
     )
 ]
