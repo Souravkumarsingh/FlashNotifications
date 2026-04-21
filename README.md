@@ -79,6 +79,7 @@ A configuration class for customizing notification appearance and behavior.
 | `textColor` | `UIColor?` | Default text color for the notification |
 | `titleTextColor` | `UIColor?` | Custom color for the notification title text |
 | `messageTextColor` | `UIColor?` | Custom color for the notification message text |
+| `type` | `FlashNotificationType?` | Custom theme for the notification UI |
 | `backgroundColor` | `UIColor?` | Background color of the notification |
 | `image` | `UIImage?` | Optional image to display in the notification |
 | `title` | `String?` | Title text of the notification |
