@@ -114,17 +114,52 @@ Returns an optional `FlashNotification` object if the notification was successfu
 #### Example Usage
 
 ```swift
-let config = FlashNotificationConfig()
-config.title = "Success Message"
-config.message = "This is a success notification!"
-let type = FlashNotificationManager.success
-config.backgroundColor = .green
-config.textColor = .white
-config.image = UIImage()
-config.dismissDelay = 2.0
-FlashNotificationManager.showNotification(config: config)
-
-FlashNotifications.showNotification(config: config)
+class FlashMessageDemoTableViewController: UITableViewController {
+    let flashTypes: [FlashNotificationType] = [
+        FlashNotificationManager.success,
+        FlashNotificationManager.error,
+        FlashNotificationManager.info
+    ]
+    let titles = [
+        "Success Message",
+        "Error Message",
+        "Info Message"
+    ]
+    let messages = [
+        "This is a success notification!",
+        "This is an error notification!",
+        "This is an info notification!"
+    ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Flash Message Types"
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return flashTypes.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = titles[indexPath.row]
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let config = FlashNotificationConfig()
+        config.title = titles[indexPath.row]
+        config.message = messages[indexPath.row]
+        let type = flashTypes[indexPath.row]
+        config.backgroundColor = type.backgroundColor
+        config.textColor = type.textColor
+        config.image = type.image
+        config.dismissDelay = 2.0
+        FlashNotificationManager.showNotification(config: config)
+    }
+}
 ```
 
 ## Distribution Format
