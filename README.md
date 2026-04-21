@@ -66,55 +66,6 @@ targets: [
 ]
 ```
 
-## Usage
-
-### Import
-```swift
-import FlashNotifications
-```
-
-### Show a Success Notification
-```swift
-FlashNotificationManager.showNotification(
-    type: FlashNotificationManager.success,
-    title: "Success",
-    message: "Operation completed successfully",
-    dismissDelay: 3.0
-)
-```
-
-### Show Error Notification
-```swift
-FlashNotificationManager.showNotification(
-    type: FlashNotificationManager.error,
-    title: "Error",
-    message: "Something went wrong",
-    dismissDelay: 3.0
-)
-```
-
-### Show Info Notification
-```swift
-FlashNotificationManager.showNotification(
-    type: FlashNotificationManager.info,
-    title: "Info",
-    message: "Here's some information",
-    dismissDelay: 3.0
-)
-```
-
-### Custom Notification
-```swift
-FlashNotificationManager.showNotification(
-    textColor: .white,
-    backgroundColor: .systemBlue,
-    image: UIImage(systemName: "star.fill"),
-    title: "Custom",
-    message: "Your custom message",
-    dismissDelay: 2.5
-)
-```
-
 ## API Documentation
 
 ### FlashNotificationConfig
@@ -163,14 +114,16 @@ Returns an optional `FlashNotification` object if the notification was successfu
 
 ```swift
 let config = FlashNotificationConfig()
-config.title = "Welcome"
-config.message = "Notification system initialized"
-config.backgroundColor = .systemGreen
-config.titleTextColor = .white
-config.messageTextColor = .white
-config.dismissDelay = 3.0
+config.title = "Success Message"
+config.message = "This is a success notification!"
+let type = FlashNotificationManager.success
+config.backgroundColor = .green
+config.textColor = .white
+config.image = UIImage()
+config.dismissDelay = 2.0
+FlashNotificationManager.showNotification(config: config)
 
-let notification = FlashNotifications.showNotification(config: config)
+FlashNotifications.showNotification(config: config)
 ```
 
 ## Distribution Format
