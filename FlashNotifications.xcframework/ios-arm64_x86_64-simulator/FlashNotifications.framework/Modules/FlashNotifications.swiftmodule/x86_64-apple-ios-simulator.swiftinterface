@@ -1,0 +1,81 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FlashNotifications
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension UIKit.UIColor {
+  public static let flatGreen: UIKit.UIColor
+  public static let flatRed: UIKit.UIColor
+  public static let flatGray: UIKit.UIColor
+}
+public enum DismissDirection : Swift.Sendable {
+  case up
+  case down
+  case left
+  case right
+  case all
+  public static func == (a: FlashNotifications.DismissDirection, b: FlashNotifications.DismissDirection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol FlashNotification : Swift.Sendable {
+  func hide()
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class FlashNotificationView : UIKit.UIView, FlashNotifications.FlashNotification {
+  @_Concurrency.MainActor final public var delegate: (any FlashNotifications.FlashNotificationDelegate)?
+  @_Concurrency.MainActor final public func hide()
+  @_Concurrency.MainActor @objc override final public var bounds: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+public class FlashNotificationConfig : Swift.Sendable {
+  public var textColor: UIKit.UIColor?
+  public var titleTextColor: UIKit.UIColor?
+  public var messageTextColor: UIKit.UIColor?
+  public var backgroundColor: UIKit.UIColor?
+  public var image: UIKit.UIImage?
+  public var title: Swift.String?
+  public var message: Swift.String?
+  public var dismissDelay: Foundation.TimeInterval?
+  public var dismissDirection: FlashNotifications.DismissDirection?
+  public var delegate: (any FlashNotifications.FlashNotificationDelegate)?
+  public var completion: (() -> Swift.Void)?
+  public init()
+  @objc deinit
+}
+public protocol FlashNotificationDelegate : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func onNotificationTap(type: any FlashNotifications.FlashNotificationType, title: Swift.String?, message: Swift.String?)
+  #endif
+}
+final public class FlashNotificationManager {
+  public static let success: any FlashNotifications.FlashNotificationType
+  public static let error: any FlashNotifications.FlashNotificationType
+  public static let info: any FlashNotifications.FlashNotificationType
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func showNotification(config: FlashNotifications.FlashNotificationConfig) -> (any FlashNotifications.FlashNotification)?
+  #endif
+  @objc deinit
+}
+public protocol FlashNotificationType : Swift.Sendable {
+  var textColor: UIKit.UIColor { get }
+  var backgroundColor: UIKit.UIColor { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var image: UIKit.UIImage? { get }
+  #endif
+}
+extension FlashNotifications.DismissDirection : Swift.Equatable {}
+extension FlashNotifications.DismissDirection : Swift.Hashable {}

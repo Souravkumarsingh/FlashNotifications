@@ -30,7 +30,7 @@ Watch FlashNotifications in action:
 Add the following to your `Podfile`:
 
 ```ruby
-pod 'FlashNotifications', '~> 1.0.0'
+pod 'FlashNotifications', '~> 1.0.1'
 ```
 
 Then run:
